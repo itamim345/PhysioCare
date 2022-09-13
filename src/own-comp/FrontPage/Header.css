@@ -1,0 +1,15 @@
+header {
+    background: #dff9fb;
+    padding: .5rem 0;
+}
+/* nav CSS */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu,.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
