@@ -1,5 +1,5 @@
 import './App.css';
-import'./own-comp/FrontPage/Header.css'
+import'./own-comp/Header/Header.css'
 import Header from './own-comp/Header/Header.js'
 import Services from './own-comp/Services/Services';
 
