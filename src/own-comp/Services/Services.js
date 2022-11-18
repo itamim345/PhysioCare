@@ -11,8 +11,8 @@ function Services() {
     .then(data => setServices(data))
 },[])
   return (
-    <div>
-        <h2>Our Services</h2>
+    <div className='container pb-4'>
+        <h2 className='pb-3'>Our <span className='text-danger'>Services</span></h2>
       <div className="services-container">
         {
             services.map(service => <Service key={service.id} service={service}/>)
