@@ -3,8 +3,8 @@
         "id" : 1,
         "title" : "Neurological",
         "description" : "Extreme weakness of the muscles, muscle spasms, and if there is a decrease in sensation, nervous system disorder like stroke, brain injuries, spinal cord injuries, Parkinson's, etc.",
-        "basic-duration" : "3 month",
-        "basic-package" : "6000/-",
+        "duration" : "3 month",
+        "price" : "6000/-",
         "timing" : "3 days per week",
         "img" : "https://i.ibb.co/mzdFr0b/neurological.jpg"
     },
@@ -12,7 +12,8 @@
         "id" : 2,
         "title" : "Orthopedic",
         "description" : "To treat the diseases related to the musculoskeletal system, including correcting the muscles, bones, ligaments, joints, tendons.Through this therapy, pain is alleviated, increasing the mobilization, and for rectifying any skeletal injury.",
-        "basic-package" : "5500/-",
+        "duration" : "3 month",
+        "price" : "5500/-",
         "timing" : "3 days per week",
         "img" : "https://i.ibb.co/8gq502Q/orthopedic.jpg"
     },
@@ -20,7 +21,8 @@
         "id" : 3,
         "title" : "Cardiopulmonary",
         "description" : "To the person who has suffered any cardiopulmonary disorders like chronic obstructive pulmonary disease and cardiac arrest.This kind of physiotherapy is to tell or educate patients about exercise and techniques through which they can improve the quality of their life.",
-        "basic-package" : "6000/-",
+        "duration" : "3 month",
+        "price" : "6000/-",
         "timing" : "3 days per week",
         "img" : "https://i.ibb.co/0YfRCGM/cardiopulmonary.jpg"
     },
@@ -28,7 +30,8 @@
         "id" : 4,
         "title" : "Pediatric",
         "description" : "A kind of physiotherapy which is done to improve the acute injuries which are found in children in the time of birth which involves certain genetic defects or delay in physical growth.there are various exercises which are done strengthening the affected part of the body and to improve the movement of the body parts.",
-        "basic-package" : "5000/-",
+        "duration" : "3 month",
+        "price" : "5000/-",
         "timing" : "3 days per week",
         "img" : "https://i.ibb.co/72mcfst/pediatric.jpg"
     },
@@ -36,7 +39,8 @@
         "id" : 5,
         "title" : "Geriatric",
         "description" : "age-related matters are treated like osteoporosis, arthritis. In these certain movements of the body restricted to avoid the pain but on the other hand, patients are given aids and exercises improve the overall mobility of the body.",
-        "basic-package" : "6000/-",
+        "duration" : "3 month",
+        "price" : "6000/-",
         "timing" : "3 days per week",
         "img" : "https://i.ibb.co/QCpVX2c/geriatric.jpg"
     },
@@ -44,7 +48,8 @@
         "id" : 6,
         "title" : "Vestibular rehabilitation",
         "description" : "The main focus of this vestibular therapy is to bring back the balance of the body which is caused by a problem in the inner ear which destroys the balance and gives the sensation of vertigo and chronic dizziness. ",
-        "basic-package" : "5500/-",
+        "duration" : "3 month",
+        "price" : "5500/-",
         "timing" : "3 days per week",
         "img" : "https://i.ibb.co/s1v8qZ2/vestibular-rehabilitation.jpg"
     }

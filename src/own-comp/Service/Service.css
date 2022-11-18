@@ -1,0 +1,8 @@
+.single-service {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.single-service img {
+    width: 100%;
+    border-radius: 10px;
+}
