@@ -27,7 +27,7 @@ const header = () => {
                         <Nav>
                             <Nav.Link as={Link} to="/login">
                                 <Button variant="danger">Login</Button>{' '}</Nav.Link>
-                            <Nav.Link href="#deets">
+                            <Nav.Link as={Link} to="/register">
                                 <Button variant="success">Register</Button>{' '}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
