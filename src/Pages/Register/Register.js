@@ -7,8 +7,11 @@ export default function Register() {
     const navigateToLogin = () => {
         navigate('/login')
     }
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(event.target.name.value)
+        console.log(event.target.email.value)
+        console.log(event.target.password.value)
     }
   return (
     <div className='container w-50 my-4 border border-success p-3 rounded'>
@@ -16,12 +19,12 @@ export default function Register() {
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter Name" />
+          <Form.Control type="text" name="name" placeholder="Enter Name" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control type="email" name="email" placeholder="Enter email" />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
@@ -29,7 +32,7 @@ export default function Register() {
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Control type="password" name="password" placeholder="Password" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="ifNotRegister">
           <p>Already Registered ? Please <span role="button" onClick={navigateToLogin} className="text-danger">Login</span></p>
