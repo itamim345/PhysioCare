@@ -1,16 +1,22 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
     const emailRef = useRef();
     const passRef = useRef();
+
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passRef.current.value;
         console.log(email,password)
+    }
+    const navigateToRegister = () => {
+        navigate('/register');
     }
   return (
     <div className="container w-50 mx-auto">
@@ -28,8 +34,8 @@ export default function Login() {
           <Form.Label>Password</Form.Label>
           <Form.Control ref={passRef} type="password" placeholder="Password" />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
+        <Form.Group className="mb-3" controlId="ifNotRegister">
+          <p>Haven't Registered yet ? please <span role="button" onClick={navigateToRegister} className="text-danger">Register</span></p>
         </Form.Group>
         <Button variant="primary" type="submit">
           Submit
