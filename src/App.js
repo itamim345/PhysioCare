@@ -1,26 +1,23 @@
 import './App.css';
-import AboutMe from './own-comp/AboutMe/AboutMe';
-import AboutPhysio from './own-comp/AboutPhysio/AboutPhysio';
-import Banner from './own-comp/Banner/Banner';
-import Contact from './own-comp/Contact/Contact';
+import Home from './Pages/Home/Home';
+import Header from './own-comp/Header/Header';
 import Footer from './own-comp/Footer/Footer';
-import'./own-comp/Header/Header.css'
-import Header from './own-comp/Header/Header.js'
-import Services from './own-comp/Services/Services';
-
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import MyServices from './Pages/MyServices/MyServices';
 
 function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <Banner/>
-      <AboutPhysio />
-      <Services/>
-      <AboutMe />
-      <Contact />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Header/>
+                <Routes>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='/services' element={<MyServices />} />
+                </Routes>
+                <Footer/>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
