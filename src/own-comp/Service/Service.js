@@ -1,5 +1,6 @@
 import React from 'react';
 import './Service.css'
+import Button from 'react-bootstrap/Button';
 
 export default function Service(props) {
   const {title, desription, duration, price, timing, img} = props.service;
@@ -11,7 +12,7 @@ export default function Service(props) {
       <p>Package: {price}</p>
       <p>Duration: {duration}</p>
       <p>Timing: {timing}</p>
-      <button>Subscribe Now</button>
+      <Button variant="danger" className='my-2'>Subscribe Now</Button>{' '}
     </div>
   );
 }
