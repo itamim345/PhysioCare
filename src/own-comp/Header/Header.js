@@ -25,7 +25,7 @@ const header = () => {
                             <Nav.Link as={Link} to="services">Services</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">
+                            <Nav.Link as={Link} to="/login">
                                 <Button variant="danger">Login</Button>{' '}</Nav.Link>
                             <Nav.Link href="#deets">
                                 <Button variant="success">Register</Button>{' '}</Nav.Link>
