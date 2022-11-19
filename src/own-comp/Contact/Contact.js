@@ -3,7 +3,7 @@ import Alert from 'react-bootstrap/Alert';
 
 export default function Contact() {
   return (
-    <div className='container pb-4'>
+    <div className='container pb-4 text-center'>
       <Alert variant="success">
       <h2>Get In <span className='text-danger'>Touch</span></h2>
       <hr />

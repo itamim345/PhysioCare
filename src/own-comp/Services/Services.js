@@ -11,7 +11,7 @@ function Services() {
     .then(data => setServices(data))
 },[])
   return (
-    <div className='container pb-4'>
+    <div className='container pb-4 text-center'>
         <h2 className='pb-3'>Our <span className='text-danger'>Services</span></h2>
       <div className="services-container">
         {
