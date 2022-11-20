@@ -20,7 +20,9 @@ const Header = () => {
                 collapseOnSelect="collapseOnSelect"
                 expand="lg"
                 bg="light"
-                variant="light">
+                variant="light"
+                className='border-bottom border-2 border-info'
+                >
                 <Container>
                     <Navbar.Brand as={Link} to="/">PhysioCare</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
