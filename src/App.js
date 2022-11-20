@@ -11,6 +11,7 @@ import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Checkout from './Pages/Checkout/Checkout';
 import About from './Pages/About/About';
 import WhyPhysio from './Pages/WhyPhysio/WhyPhysio';
+import ContacMe from './Pages/ContactMe/ContacMe';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                     <Route path='/home' element={<Home/>}/>
                     <Route path='/about' element={<About/>}/>
                     <Route path='/services' element={<MyServices />} />
+                    <Route path='/contact' element={<ContacMe/>} />
                     <Route path='/why-physio' element={<WhyPhysio/>} />
                     <Route path='/booking/:bookingId' element={<BookingPage />} />
                     <Route path='/login' element={<Login/>}/>

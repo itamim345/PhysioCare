@@ -30,6 +30,7 @@ const Header = () => {
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             <Nav.Link as={Link} to="/why-physio">WhyPhysio</Nav.Link>
                             <Nav.Link as={Link} to="services">Services</Nav.Link>
+                            <Nav.Link as={Link} to="contact">Contact</Nav.Link>
                         </Nav>
                         <Nav>
                             {/* Conditional render if userLoggedin then, logout, otherwise 2 button from 2condition */}
