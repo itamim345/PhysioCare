@@ -32,16 +32,24 @@ const Header = () => {
                             <Nav.Link as={Link} to="services">Services</Nav.Link>
                         </Nav>
                         <Nav>
+                            {/* Conditional render if userLoggedin then, logout, otherwise 2 button from 2condition */}
                             {
-                                user ? 
-                                    <Button onClick={handleSignOut}>Sign Out</Button>
+                                user ?
+                                <Nav.Link>
+                                    <Button variant="warning" onClick={handleSignOut}>Sign Out</Button>{' '}</Nav.Link>
+
                                     :
                                 <Nav.Link as={Link} to="/login">
                                 <Button variant="danger">Login</Button>{' '}</Nav.Link>
                             }
 
-                            <Nav.Link as={Link} to="/register">
+                            {
+                                user ?
+                                ""
+                                :
+                                <Nav.Link as={Link} to="/register">
                                 <Button variant="success">Register</Button>{' '}</Nav.Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
