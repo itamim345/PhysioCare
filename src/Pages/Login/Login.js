@@ -2,8 +2,18 @@ import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 export default function Login() {
+
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
+
     const emailRef = useRef();
     const passRef = useRef();
 
@@ -13,10 +23,14 @@ export default function Login() {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passRef.current.value;
-        console.log(email,password)
+        // console.log(email,password)
+        signInWithEmailAndPassword(email,password);
     }
     const navigateToRegister = () => {
         navigate('/register');
+    }
+    if(user){
+      navigate('/home')
     }
   return (
     <div className="container w-50 mx-auto my-4 border border-danger p-3 rounded">
