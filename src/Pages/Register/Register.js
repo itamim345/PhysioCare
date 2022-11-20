@@ -1,17 +1,30 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 export default function Register() {
+
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth);
+
     const navigate = useNavigate()
     const navigateToLogin = () => {
         navigate('/login')
     }
+
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(event.target.name.value)
-        console.log(event.target.email.value)
-        console.log(event.target.password.value)
+        
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+
+        createUserWithEmailAndPassword(email,password)
     }
   return (
     <div className='container w-50 my-4 border border-success p-3 rounded'>
@@ -24,7 +37,7 @@ export default function Register() {
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" name="email" placeholder="Enter email" />
+          <Form.Control type="email" name="email" placeholder="Enter email" required/>
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
