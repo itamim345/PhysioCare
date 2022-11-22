@@ -21,6 +21,11 @@ export default function Checkout() {
         <Form.Label>Contact Number</Form.Label>
         <Form.Control type="text" placeholder="Enter Yor Contact Number" />
       </Form.Group>
+
+      <Form.Group controlId="formFile" className="mb-3">
+        <Form.Label>Default file input example</Form.Label>
+        <Form.Control type="file" />
+      </Form.Group>
       
       <Button variant="primary" type="submit">
         Submit
