@@ -4,7 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 export default function Checkout() {
   return (
     <div className='container py-5'>
-      <h2>Please Checkout your Booking</h2>
+      <h2 className='text-center text-danger text-decoration-underline'>Please Checkout your Booking</h2>
       <div>
       <Form>
       <Form.Group className="mb-3" controlId="formBasicTransactionId">
