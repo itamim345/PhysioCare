@@ -3,10 +3,10 @@ import { Button, Form } from 'react-bootstrap';
 
 export default function Checkout() {
   return (
-    <div className='container py-5'>
-      <h2 className='text-center text-danger text-decoration-underline'>Please Checkout your Booking</h2>
+    <div className='container py-2'>
+      <h2 className='text-center text-danger text-decoration-underline py-2'>Please Checkout your Booking</h2>
       <div>
-      <Form>
+      <Form className="w-50 mx-auto">
       <Form.Group className="mb-3" controlId="formBasicTransactionId">
         <Form.Label>Transaction ID</Form.Label>
         <Form.Control type="email" placeholder="Enter your transaction ID" />
@@ -27,7 +27,7 @@ export default function Checkout() {
         <Form.Control type="file" />
       </Form.Group>
       
-      <Button variant="primary" type="submit">
+      <Button variant="danger" type="submit">
         Submit
       </Button>
     </Form>
