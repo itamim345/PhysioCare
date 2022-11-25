@@ -25,6 +25,12 @@ export default function Register() {
         const password = event.target.password.value;
 
         createUserWithEmailAndPassword(email,password)
+        alert("Registered Successfully!");
+        
+        event.target.email.value = '';
+        event.target.password.value = '';
+        event.target.name.value = '';
+        
     }
   return (
     <div className='container w-50 my-4 border border-success p-3 rounded'>
