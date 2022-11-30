@@ -32,6 +32,9 @@ export default function Register() {
         event.target.name.value = '';
         
     }
+    if (user) {
+      navigate("/home");
+    }
   return (
     <div className='container w-50 my-4 border border-success p-3 rounded'>
       <h2 className='text-center text-success text-decoration-underline'>Please Register</h2>
@@ -51,7 +54,7 @@ export default function Register() {
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" name="password" placeholder="Password" />
+          <Form.Control type="password" name="password" placeholder="Password should be more than 6 characters" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="ifNotRegister">
           <p>Already Registered ? Please <span role="button" onClick={navigateToLogin} className="text-danger">Login</span></p>
