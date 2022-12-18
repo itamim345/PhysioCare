@@ -13,7 +13,7 @@ export default function Footer() {
             &nbsp;&nbsp;
             <i className="ri-twitter-fill display-5"></i>
             &nbsp;&nbsp;
-            <i className="ri-instagram-fill display-5"></i>
+            <i className="ri-telegram-fill display-5"></i>
           </p>
         </div>
       </footer>
