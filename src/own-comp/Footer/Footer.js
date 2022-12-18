@@ -9,11 +9,11 @@ export default function Footer() {
             <a href="/">PhysioCare</a>
           </p>
           <p>
-            <i className="ri-facebook-circle-fill display-5"></i>
-            &nbsp;&nbsp;
-            <i className="ri-twitter-fill display-5"></i>
-            &nbsp;&nbsp;
-            <i className="ri-telegram-fill display-5"></i>
+            <i className="ri-facebook-circle-fill display-5 text-primary"></i>
+            &nbsp;&nbsp; &nbsp;&nbsp;
+            <i className="ri-twitter-fill display-5 text-info"></i>
+            &nbsp;&nbsp; &nbsp;&nbsp;
+            <i className="ri-instagram-fill display-5 text-danger"></i>
           </p>
         </div>
       </footer>
