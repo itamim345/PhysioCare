@@ -33,7 +33,7 @@ export default function Login() {
       navigate('/home')
     }
   return (
-    <div className="container w-50 mx-auto my-4 border border-danger p-3 rounded">
+    <div className="container w-50 mx-auto my-4 border border-danger p-3 rounded form-container-shadow">
       <h2 className="text-center text-decoration-underline text-danger">Please Login</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
