@@ -7,7 +7,12 @@ export default function Service(props) {
   const {id,title, desription, duration, price, timing, img} = props.service;
   const navigate = useNavigate();
   const navigateToBooking = (id) => {
-    navigate(`/booking/${id}`);
+    //navigate(`/booking/${id}`);
+
+    navigate({
+      pathname: `/booking/${id}`,
+      search: `?price=${price}&title=${title}`,
+    });
   }
   return (
     <div className='single-service'>
